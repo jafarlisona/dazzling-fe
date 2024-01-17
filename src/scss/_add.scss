@@ -1,0 +1,125 @@
+#add {
+    padding: 120px 0;
+
+    .container {
+        max-width: 1200px;
+        display: flex;
+        margin: 0 auto;
+        gap: 60px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 500px;
+            width: 100%;
+
+            .form {
+                display: flex;
+                gap: 15px;
+                justify-content: space-between;
+
+                label {
+                    font-weight: 600;
+                }
+
+                input {
+                    height: 40px;
+                    width: 300px;
+                    outline: none;
+                    background-color: transparent;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                }
+
+                textarea {
+                    height: 150px;
+                    width: 300px;
+                    outline: none;
+                    background-color: transparent;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                }
+
+                span {
+                    color: red;
+                    font-size: 14px;
+                }
+            }
+
+            button {
+                width: 165px;
+                height: 50px;
+                font-size: 14px;
+                color: #1FA67A;
+                font-weight: bolder;
+                border: none;
+                background-color: transparent;
+                border: 1px solid #ddd;
+                transition: all 400ms;
+
+                &:hover {
+                    color: white;
+                    background-color: #1FA67A;
+                    border: none;
+                }
+            }
+        }
+
+        .table {
+            input {
+                height: 40px;
+                width: 300px;
+                outline: none;
+                background-color: transparent;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                margin-bottom: 30px;
+            }
+
+            table {
+                border-collapse: collapse;
+                text-align: center;
+
+                thead {
+                    height: 50px;
+                    background-color: #1FA67A;
+
+                    th {
+                        padding: 20px 50px;
+                        color: white;
+                        font-size: 17px;
+                        font-weight: 500;
+                    }
+                }
+
+                tbody {
+                    tr {
+                        td {
+                            padding: 15px 0;
+                            color: #6b6b6b;
+                            font-size: 13px;
+                            line-height: 22px;
+                            font-weight: 500;
+
+                            p {
+                                white-space: wrap;
+                                height: 70px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+
+                            i {
+                                transition: all 500ms;
+
+                                &:hover {
+                                    color: #1fa67a;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

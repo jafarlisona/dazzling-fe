@@ -1,0 +1,38 @@
+nav {
+    height: 66px;
+    background-color: white;
+
+    .navbar {
+        max-width: 1100px;
+        height: 66px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            color: #1fa67a;
+            font-size: 24px;
+        }
+
+        .pages {
+            a {
+                display: inline-block;
+                font-size: 14px;
+                color: #999;
+                line-height: 66px;
+                padding: 0 15px;
+                transition: all 400ms;
+                &:hover {
+                    background-color: #1fa67a;
+                    color: white;
+                }
+            }
+
+            .active {
+                background-color: #1fa67a;
+                color: white;
+            }
+        }
+    }
+}

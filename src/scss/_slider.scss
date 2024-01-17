@@ -1,0 +1,61 @@
+.slider {
+    .slide {
+        height: 440px;
+        padding: 40px 0;
+        .text {
+            max-width: 1100px;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            h1 {
+                background: rgba(31, 166, 122, 0.7);
+                font-weight: 400;
+                font-size: 24px;
+                max-width: 640px;
+                display: inline-block;
+                padding: 12px 20px;
+                margin-bottom: 0;
+                color: #fff;
+            }
+            p{
+                background: rgba(59, 59, 59, 0.8);
+                display: block;
+                color: #ddd;
+                max-width: 600px;
+                padding: 12px 20px;
+            
+            }
+        }
+    }
+}
+
+.slide1 {
+    background-image: url("https://149842022.v2.pressablecdn.com/dazzling/wp-content/uploads/sites/54/2013/01/homev_updated1_02.jpg");
+}
+
+.slide2 {
+    background-image: url("https://149842022.v2.pressablecdn.com/dazzling/wp-content/uploads/sites/54/2013/01/slide03.jpg");
+}
+
+.slide3 {
+    background-image: url("https://149842022.v2.pressablecdn.com/dazzling/wp-content/uploads/sites/54/2013/01/slide02.jpg");
+}
+
+.swiper-button-prev {
+    color: #030B13;
+}
+
+.swiper-button-next {
+    color: #030B13;
+}
+
+.swiper-pagination-bullet {
+    height: 11px;
+    width: 11px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #030B13;
+}

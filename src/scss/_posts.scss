@@ -1,0 +1,237 @@
+#posts {
+    .posts-container {
+        max-width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        gap: 30px;
+
+        .cards {
+            width: 780px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            padding: 60px 0;
+
+            .card {
+                h2 {
+                    color: #444444;
+                    font-size: 32px;
+                    font-weight: 400;
+                    line-height: 62px;
+                }
+
+                .folder-date {
+                    display: flex;
+                    gap: 15px;
+                    margin: 0 0 10px 0;
+
+                    .date {
+                        i {
+                            color: #1fa67a;
+                            font-size: 14px;
+                            line-height: 22px;
+                        }
+
+                        span {
+                            color: #6b6b6b;
+                            font-size: 13px;
+                            line-height: 22px;
+                        }
+                    }
+
+                    .folder {
+                        i {
+                            color: #1fa67a;
+                            font-size: 14px;
+                            line-height: 22px;
+                        }
+
+                        span {
+                            color: #6b6b6b;
+                            line-height: 22px;
+                            font-size: 13px;
+                        }
+                    }
+                }
+
+                .card-content {
+                    border-top: 1px solid #F6F6F6;
+                    border-bottom: 1px solid #F6F6F6;
+                    padding: 20px 0px 60px;
+                    height: 310px;
+                    display: flex;
+                    gap: 15px;
+
+                    .img {
+                        padding: 5px;
+                        border: 1px solid #ddd;
+                        border-radius: 3px;
+                        width: max-content;
+
+                        img {
+                            width: 365px;
+                            object-fit: cover;
+                            height: 210px;
+                        }
+                    }
+
+                    .text {
+                        width: 390px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+
+                        p {
+                            color: #6b6b6b;
+                            font-size: 13px;
+                            line-height: 22px;
+                            font-weight: 500;
+                            text-overflow: ellipsis;
+                        }
+
+                        a {
+                            border: 1px solid #F6F6F6;
+                            padding: 7px 13px 8px;
+                            font-size: 14px;
+                            color: #1fa67a;
+                            transition: all 400ms;
+                            border-radius: 3px;
+                            align-self: flex-end;
+
+                            &:hover {
+                                background-color: #1fa67a;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .sidebar {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 30px 0;
+
+            .mini-posts {
+                .input {
+                    border: 1px solid #ddd;
+                    height: 30px;
+                    margin-bottom: 20px;
+                    display: flex;
+                    overflow: hidden;
+                    border-radius: 5px;
+
+                    input {
+                        border: none;
+                        outline: none;
+                        width: 100%;
+                        height: 25px;
+                    }
+
+                    i {
+                        width: 40px;
+                        height: 28px;
+                        line-height: 28px;
+                        font-size: 14px;
+                        color: white;
+                        background-color: #1FA67A;
+                        display: inline-block;
+                        text-align: center;
+                    }
+                }
+
+                .popular {
+
+                    .buttons {
+                        button {
+                            background-color: transparent;
+                            color: #1fa67a;
+                            border: none;
+                            padding: 15px;
+                            font-size: 14px;
+                        }
+
+                        .selected {
+                            color: #444444;
+                            border-radius: 5px;
+                            border: 1px solid #ddd;
+                            border-bottom: none;
+                        }
+                    }
+
+                    .content {
+                        border: 1px solid #ddd;
+                        border-radius: 3px;
+                        padding: 0 10px;
+
+                        .mini-card {
+                            border-bottom: 1px solid #ddd;
+                            padding: 10px 0;
+                            display: flex;
+                            gap: 10px;
+
+                            .image {
+                                padding: 5px 5px 2px 5px;
+                                border: 1px solid #ddd;
+                                border-radius: 3px;
+                                width: max-content;
+
+                                img {
+                                    width: 50px;
+                                    height: 50px;
+                                    object-fit: cover;
+                                    object-position: center;
+                                }
+                            }
+
+                            .text {
+                                p {
+                                    font-size: 13px;
+                                    color: #1fa67a;
+                                }
+
+                                span {
+                                    font-size: 11px;
+                                    color: #444444;
+                                    font-style: italic;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .comments {
+                h2 {
+                    color: #1fa67a;
+                    font-size: 24px;
+                    line-height: 27px;
+                    font-weight: 400;
+                    border-bottom: 1px solid #ddd;
+                }
+
+                .comments-container {
+                    padding: 20px 0;
+
+                    .comment {
+                        padding: 15px 0;
+                        font-size: 14px;
+                        color: #6b6b6b;
+                        display: flex;
+                        border-bottom: 1px solid #ddd;
+                        gap: 10px;
+
+                        p {
+                            span {
+                                color: #1fa67a;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
