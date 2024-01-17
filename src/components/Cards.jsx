@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 function Cards() {
@@ -11,7 +10,7 @@ function Cards() {
   }, []);
   function formatDate(dateString) {
     const dateObject = new Date(dateString);
-    return dateObject.toLocaleString(); 
+    return dateObject.toLocaleString();
   }
   return (
     <div className="cards">
@@ -34,7 +33,7 @@ function Cards() {
             </div>
             <div className="text">
               <p>{x.description}</p>
-              <Link to="#">
+              <Link to={"detail/" + x._id}>
                 Continue Reading <i class="fa-solid fa-angle-right"></i>
               </Link>
             </div>

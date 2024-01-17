@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import AddPage from "./pages/AddPage";
 import MainLayout from "./layout/MainLayout";
+import DetailsPage from "./pages/DetailsPage";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/addPage" element={<AddPage />} />
+          <Route path="/detail/:id" element={<DetailsPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
